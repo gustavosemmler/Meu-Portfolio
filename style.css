@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Montserrat:ital,wght@0,100;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Montserrat:ital,wght@0,100;1,100&family=Roboto:wght@100;500&display=swap');
 
 
 /* estilo geral*/
@@ -18,6 +18,21 @@ body{
 .interface{
     max-width: 1280px;
     margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #03fa6e;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
 }
 
 /* Estilo do cabeçalho */
@@ -53,16 +68,50 @@ header nav ul li {
     padding: 0 40px;
 }
 
-header .btn-contato button {
-    padding: 10px 40px;
-    font-size: 18px;
-    font-weight: 500;
-    background-color: #03fa6e;
-    border: 0;
-    border-radius: 30px;
-    cursor: pointer;
+.btn-contato button:hover {
+    box-shadow: 0px 0px 8px #03fa6ec5;
+    transform: scale(1.05);
 }
 
-header .btn-contato button:hover {
-    box-shadow: 0px 0px 8px #03fa6ec5;(0, 255, 255, 0.829);
+/* Estilo do topo do site */
+
+section.topo-do-site{
+    padding: 40px 4%;
 }
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1 {
+    color: white;
+    font-size: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500px;
+}
+
+.topo-do-site .txt-topo-site p {
+    color: white;
+    margin: 40px 0;
+    font-size: 20px;
+    
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuando 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuando {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* Estilo das especialidades */
+section.especialidades
