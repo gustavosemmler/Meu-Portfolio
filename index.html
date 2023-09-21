@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Gustavo Semmler</title>
 </head>
@@ -11,22 +13,26 @@
     <header>
         <div class="interface">
             <div class="logo">
-                <a href="#">
+                <a href="index.html">
                     <img src="images/Gustavo Semmler.png" alt="logo Gustavo dev">
                 </a>
             </div><!--logo-->
-
             <nav class="menu-desktop">
-                <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Especialidades</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Projetos</a></li>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Especialidades</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
                 </ul>
+                <div class="hamburguer">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </nav>
 
             <div class="btn-contato">
-                <a href="#">
+                <a href="mailto:gustavosemmler@hotmail.com">
                     <button>Contato</button>
                 </a>
             </div>
@@ -43,7 +49,7 @@
                         <p>Determinado a criar experiências web excepcionais. Minha paixão pela programação e design resulta em produtos digitais que se destacam. Estou ansioso para trazer minha expertise para sua equipe e ajudar a criar experiências incríveis para seus usuários.</p>
 
                         <div class="btn-contato">
-                            <a href="#">
+                            <a href="https://wa.me/5511977840839" target="_blank">
                                 <button>Entre em contato</button>
                             </a>
                         </div>
@@ -63,17 +69,17 @@
                     <div class="especialidades-box">
                         <i class="bi bi-code-slash"></i>
                         <h3>Website</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore aliquid beatae vitae veniam alias commodi, a velit inventore facere, suscipit amet placeat nisi, magnam autem sequi veritatis temporibus deleniti porro.</p>
+                        <p>Site criado para servir de portfolio, e como base para treinamento para aprimorar ainda mais as habilidades em dev front end.</p>
                     </div><!--especidades-box-->
                     <div class="especialidades-box">
                         <i class="bi bi-cart"></i>
                         <h3>Loja online</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore aliquid beatae vitae veniam alias commodi, a velit inventore facere, suscipit amet placeat nisi, magnam autem sequi veritatis temporibus deleniti porro.</p>
+                        <p>Ainda em produção, estou trabalhando sozinho para criar uma loja online e conseguir trabalhar com vendas online</p>
                     </div><!--especidades-box-->
                     <div class="especialidades-box">
-                        <i class="bi bi-wordpress"></i>
+                        <a href="https://github.com/gustavosemmler"><i class="bi bi-wordpress"></i></a>
                         <h3>Github</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore aliquid beatae vitae veniam alias commodi, a velit inventore facere, suscipit amet placeat nisi, magnam autem sequi veritatis temporibus deleniti porro.</p>
+                        <p>Github criado com o propósito de aprender e conhecer pessoas que queiram conhecer ainda mais sobre programação, conhecendo pessoas pelo mundo e ajudando e sendo ajudado em diversos projetos, como esse!</p>
                     </div><!--especidades-box-->
                 </div><!--flex-->
             </div><!--interface-->
@@ -105,20 +111,64 @@
             <div class="interface">
                 <h2 class="titulo">MEU <span>PORTFÓLIO:</span></h2>
                 <div class="flex">
-                    <div class="img-port" style="background-image: url(images/big\ foto.png);">
-                        <div class="overlay">Projeto Site da R.a</div>
+                    <a href="https://gustavosemmler.github.io/Site-R.A/" target="_blank">
+                        <div class="img-port" style="background-image: url(images/big\ foto.png);">
+                            <div class="overlay">Projeto Site da R.a</div>
+                    </a>
                     </div>
-                    <div class="img-port" style="background-image: url(images/projeto\ redes\ sociais.png);">
-                        <div class="overlay">Projeto Redes sociais</div>
-                    </div>
-                    <div class="img-port" style="background-image: url(images/snake\ game.png);">
-                        <div class="overlay">Projeto jogo da cobrinha</div>
+                    <a href="https://gustavosemmler.github.io/Projeto-social/" target="_blank">
+                        <div class="img-port" style="background-image: url(images/projeto\ redes\ sociais.png);">
+                            <div class="overlay">Projeto Redes sociais</div>
+                        </div>
+                    </a>
+                    <a href="https://gustavosemmler.github.io/snake-game/" target="_blank">
+                        <div class="img-port" style="background-image: url(images/snake\ game.png);">
+                            <div class="overlay">Projeto jogo da cobrinha</div>
+                    </a>
                     </div>
                 </div><!--flex-->
             </div><!--interface-->
         </section><!--portfolio-->
+
+        <section class="formulario">
+            <div class="interface">
+                <h2 class="titulo">ENTRE EM  <span>CONTATO.</span></h2>
+
+                <form method="post" action="enviar.php">
+                    <input class="input" type="text" name="nome" id="nome" placeholder="Seu nome completo: " required>
+                    <label for="nome"></label>
+                    <input class="input" type="text" name="email" id="email" placeholder="Seu e-mail: " required>
+                    <label for="email"></label>
+                    <input class="input" type="text" name="celular" id="celular" placeholder="Seu celular: ">
+                    <label for="celular"></label>
+                    <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
+                    <div class="btn-enviar"><input type="submit" value="Enviar"></div>
+
+                </form>
+            </div><!--interface-->
+        </section><!--formulario-->
     </main>
 
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="images/Gustavo Semmler.png" alt="">
+                    </div><!--logo-footer-->
+                    <div class="btn-social">
+                        <a href="https://www.instagram.com/gusta_sem/" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
+                        <a href="https://www.youtube.com/channel/UCjJOsLvzr613dlOCA1J_BrA" target="_blank"><button><i class="bi bi-youtube"></i></button></a>
+                        <a href="https://www.linkedin.com/in/gustavo-semmler-marques-b10b7827b/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
+                    </div><!--btn-social-->
+                </div>
+            </div><!--line-footer-->
+            <div class="line-footer borda">
+                <p><i class="bi bi-envelope"></i><a href="mailto:gustavosemmler@hotmail.com"> gustavosemmler@hotmail.com</a></p>
+            </div><!--line-footer-->
+        </div><!--interface-->
+    </footer>
 
+    <script src="mobile-navbar.js"></script>
 </body>
 </html>
